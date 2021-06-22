@@ -144,11 +144,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 762800751603335570, guid: ce1e8e032db7c26449ae1d260b060f0c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.222
+      value: 15.24
       objectReference: {fileID: 0}
     - target: {fileID: 762800751603335570, guid: ce1e8e032db7c26449ae1d260b060f0c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.5739994
+      value: -9.1
       objectReference: {fileID: 0}
     - target: {fileID: 762800751603335570, guid: ce1e8e032db7c26449ae1d260b060f0c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -373,7 +373,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 46be5f15e363aac4381cc9eb6efc673f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -605,13 +605,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095747382}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c821eb46bb56004f9558cde393c0e5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_liftAcceleration: 20
-  m_maxTilt: 45
+  m_maxTilt: 35
   m_tiltSpeed: 15
   m_turnSpeed: 200
   m_spinDampener: 10
@@ -735,7 +735,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095747382}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -756,6 +756,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_pitchVariability: 0.2
+--- !u!114 &1095747391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095747382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b00cdc514469b1d4fa2ea24e8d3beada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_max_fan_force: 100
+  m_stability_deadzone: 1
+  m_liftAcceleration: 30
+  m_maxTilt: 20
+  m_tiltSpeed: 10
+  m_turnSpeed: 10
+  m_spinDampener: 10
+  m_YDampener: 1
+  m_YDampenerDeadzone: 0.2
+--- !u!114 &1095747392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095747382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1843e98f39af45498268a31563e4442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acceleration: {x: 0, y: 0, z: 0}
 --- !u!1 &1297962151
 GameObject:
   m_ObjectHideFlags: 0
@@ -846,8 +880,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1297962151}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.752373, y: -3.5499105, z: -4.7629566}
-  m_LocalScale: {x: 100, y: 1, z: 100}
+  m_LocalPosition: {x: -8.752373, y: 0, z: -4.7629566}
+  m_LocalScale: {x: 100, y: 2, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
